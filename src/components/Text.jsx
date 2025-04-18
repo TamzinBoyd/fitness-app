@@ -1,6 +1,16 @@
-const Text = ({ textAlign, colour, bold, children }) => {
+const Text = ({
+    textAlign = 'text-left',
+    colour = 'text-primaryBlack',
+    bold,
+    children,
+    smallFont = false
+}) => {
     return (
-        <p className={`${textAlign} ${colour} ${bold ? 'font-bold' : ''}`}>
+        <p
+            className={`w-full ${textAlign} ${colour} ${
+                bold ? 'font-bold' : ''
+            } ${smallFont ? 'text-sm' : ''}`}
+        >
             {children}
         </p>
     );

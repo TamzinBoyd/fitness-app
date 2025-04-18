@@ -6,7 +6,7 @@ import Title from './Title';
 
 const MealCard = () => {
     return (
-        <ContainerCard>
+        <ContainerCard borderColour="border-pastelOne">
             <div className="flex justify-between pr-4">
                 <Title title="Meal type" />
                 <Title title="total cals" />
